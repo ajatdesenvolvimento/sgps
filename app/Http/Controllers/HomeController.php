@@ -31,7 +31,7 @@ class HomeController extends Controller
         );
         if(\Auth::attempt($userdata)){
           echo "Sucesso";
-          echo "<a href='logout'>Sair</a>";
+          echo " <a href='logout'>Sair</a>";
         }else{
           return \Redirect::to('login');
         }
